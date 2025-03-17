@@ -7,74 +7,76 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #000;
+            background-color: #ffffff;
+            color: #000000;
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
-            text-align: center;
         }
         .container {
             display: flex;
             align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            width: 80%;
+            max-width: 1200px;
         }
-        .profile-pic {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
+        .profile-img {
+            width: 40%;
+            max-height: 500px;
             object-fit: cover;
-            margin-bottom: 20px;
+            border-radius: 10px;
         }
-        h1 {
+        .text-content {
+            width: 50%;
+            text-align: left;
+            padding-left: 40px;
+        }
+        .text-content h1 {
             font-size: 48px;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin: 0;
         }
-        p {
+        .text-content p {
             font-size: 18px;
-            margin-bottom: 20px;
+            margin: 10px 0;
         }
-        .contact-info {
-            font-size: 18px;
+        .contact-icons {
             display: flex;
-            justify-content: center;
             gap: 15px;
+            margin: 15px 0;
         }
-        .contact-info a {
+        .contact-icons a {
             text-decoration: none;
-            color: black;
+            font-size: 20px;
+            color: #000;
         }
-        .button {
+        .cv-button {
             display: inline-block;
             padding: 10px 20px;
-            font-size: 18px;
-            color: white;
-            background-color: black;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            background: #000;
+            color: #fff;
             text-decoration: none;
-            margin-top: 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="IMG_3976~photo.jpg" alt="Damon Tan" class="profile-pic">
-        <h1>Damon Tan</h1>
-        <p>Engineer & Innovator</p>
-        <div class="contact-info">
-            <a href="mailto:damontan246@gmail.com">📧</a>
-            <a href="tel:+16268336619">📞</a>
-            <a href="https://www.linkedin.com/in/damontan/" target="_blank">🔗</a>
+        <img src="/mnt/data/IMG_3976~photo.jpg" alt="Damon Tan" class="profile-img">
+        <div class="text-content">
+            <h1>Damon Tan</h1>
+            <p>Engineer & Innovator</p>
+            <div class="contact-icons">
+                <a href="mailto:damontan246@gmail.com">📧</a>
+                <a href="tel:+16268336619">📞</a>
+                <a href="https://www.linkedin.com/in/damontan/" target="_blank">🔗</a>
+            </div>
+            <a href="/mnt/data/Damon_Tan_Resume.pdf" download class="cv-button">Download CV</a>
         </div>
-        <a href="Damon_Tan_Resume.pdf" download class="button">Download CV</a>
     </div>
 </body>
 </html>
