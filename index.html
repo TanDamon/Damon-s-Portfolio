@@ -7,83 +7,57 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ADD8E6;
-            color: #333;
+            background-color: #fff;
+            color: #000;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-        .banner {
-            background-color: #0073e6;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 24px;
+        h1 {
+            font-size: 48px;
             font-weight: bold;
+            margin-bottom: 10px;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            font-size: 36px;
-            font-weight: bold;
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
         }
         .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
             font-size: 18px;
+            text-align: center;
         }
-        .section {
-            background: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        .contact-info a {
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+            display: inline-block;
         }
-        .about-toggle {
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
-            color: blue;
-            text-decoration: underline;
-        }
-        .about-content {
-            display: none;
+            text-decoration: none;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="banner">Damon Tan - Portfolio</div>
-    <div class="container">
-        <header>
-            <h1>Damon Tan</h1>
-        </header>
-        <div class="contact-info">
-            <p>📧 <a href="mailto:damontan246@gmail.com">Email</a></p>
-            <p>📞 <a href="tel:+16268336619">Phone</a></p>
-            <p>🔗 <a href="https://www.linkedin.com/in/damontan/" target="_blank">LinkedIn</a></p>
-        </div>
-        <div class="section">
-            <h2>Portfolio - CAD Prints</h2>
-            <input type="file" accept="application/pdf">
-        </div>
-        <div class="section">
-            <h2>Thesis Paper</h2>
-            <input type="file" accept="application/pdf">
-        </div>
-        <div class="section">
-            <h2 class="about-toggle">About Me (Click to Expand)</h2>
-            <div class="about-content">
-                <p>Here you can write more about your background, experience, and interests.</p>
-            </div>
-        </div>
+    <h1>Damon Tan</h1>
+    <p>Engineer & Innovator</p>
+    <div class="contact-info">
+        <p>📧 <a href="mailto:damontan246@gmail.com">Email</a></p>
+        <p>📞 <a href="tel:+16268336619">Phone</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/damontan/" target="_blank">LinkedIn</a></p>
     </div>
-    <script>
-        document.querySelector('.about-toggle').addEventListener('click', function() {
-            const content = document.querySelector('.about-content');
-            content.style.display = content.style.display === 'none' ? 'block' : 'none';
-        });
-    </script>
+    <a href="Damon_Tan_Resume.pdf" download class="button">Download CV</a>
 </body>
 </html>
