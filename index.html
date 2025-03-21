@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Damon Tan - Portfolio</title>
     <style>
         body {
@@ -27,11 +27,14 @@
             max-height: 500px;
             object-fit: cover;
             border-radius: 10px;
+            flex-shrink: 0;
         }
         .text-content {
             width: 50%;
             text-align: left;
             padding-left: 40px;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
         .text-content h1 {
             font-size: 80px;
@@ -46,6 +49,7 @@
             display: flex;
             gap: 15px;
             margin: 15px 0;
+            white-space: nowrap;
         }
         .contact-icons a {
             text-decoration: none;
@@ -74,7 +78,7 @@
                 <a href="mailto:damontan246@gmail.com">📧</a>
                 <a href="tel:+16268336619">📞</a>
                 <a href="https://www.linkedin.com/in/damontan/">
-			<img src="linkedin.png" width="20" height="20" alt="linkedin-logo" style="margin-top: 5px;">
+                <img src="linkedin.png" width="20" height="20" alt="linkedin-logo" style="margin-top: 5px;">
             </div>
             <a href="Damon_Tan_Resume.pdf" download class="cv-button">Download CV</a>
         </div>
